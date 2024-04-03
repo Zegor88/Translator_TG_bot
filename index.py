@@ -29,8 +29,7 @@ Please identify the language of the user's text. Response only The language name
 
 #User Message
 user_message = f"""
-Ширити даље. 
-Молба од стране управе школе.!
+Dobro jutro! Jaksa poziva drugare na proslavu svog 8.rodjendana 🙂!
 """
 
 input_language = gpt_response(system_message_return_language, user_message)
