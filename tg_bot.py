@@ -2,8 +2,16 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
+from dotenv import load_dotenv
+import os
 
-TOKEN: Final = '6590325710:AAFCZgPSQTS_L7Qtt2Tktm3t7U2bkqdJ5w4'
+# Open Api Key load
+dotenv_path = './.env'
+load_dotenv(dotenv_path)
+TOKEN: Final = os.getenv('GEBERICH_OPTG_TOKENENAI_API_KEY')
+
+
+openai.api_key = os.getenv('GEBERICH_OPENAI_API_KEY')
 BOT_USERNAME: Final = '@traveltiesbot'
 
 start_message = """
