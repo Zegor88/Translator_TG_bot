@@ -33,9 +33,9 @@ client = OpenAI()
 # Function for OpenAI response
 def gpt_response(system_message, prompt_text):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         temperature=0,
-        max_tokens=100
+        max_tokens=100,
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": prompt_text}
