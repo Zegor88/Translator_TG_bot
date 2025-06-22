@@ -8,11 +8,11 @@ The diagram below illustrates the main workflow of the bot: from receiving a mes
 
 ```mermaid
 graph TD;
-    A[👤 Пользователь] -- "Отправляет сообщение" --> B(🤖 TG-Bot);
-    B -- "Получает сообщение" --> C["🧠 Определение языка (LLM)"];
-    C -- "Язык определён" --> D["🧠 Перевод текста (LLM)"];
-    D -- "Текст переведён" --> E(🤖 TG-Bot);
-    E -- "Отправляет перевод" --> A;
+    A[👤 User] -- "Sends message" --> B(🤖 TG-Bot);
+    B -- "Receives message" --> C["🧠 Language Detection (LLM)"];
+    C -- "Language detected" --> D["🧠 Text Translation (LLM)"];
+    D -- "Text translated" --> E(🤖 TG-Bot);
+    E -- "Sends translation" --> A;
 ```
 
 ## Features
